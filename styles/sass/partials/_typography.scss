@@ -1,0 +1,61 @@
+@use "./variables" as *;
+
+html {
+    // setting  base font size to 20px;
+    font-size: 125%;
+}
+
+// stripping styles
+body,
+section,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h4,
+a,
+button {
+    font-family: $primaryFont;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: $secondaryFont;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $white;
+}
+
+h4 {
+    font-size: 0.7rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    color: $black;
+    font-family: $primaryFont;
+}
+
+p {
+    font-family:$secondaryFont;
+    font-weight: 500;
+    font-size: .8rem;
+}

@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+.contact {
+    background-color: $lightGreen;
+    padding: 5% 0%;
+    .wrapper {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        i {
+            color: $white;
+            margin-top: 16px;
+        }
+        button {
+            width:150px;
+            border: none;
+            padding:10px;
+            background-color: $dustyRose;
+        }
+    }
+}

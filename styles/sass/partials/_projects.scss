@@ -1,0 +1,46 @@
+@use "./variables" as *;
+
+.projects {
+    background-color: $offWhite;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.projectGallery {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    .project {
+        background-color: $white;
+        margin: 5% 0%;
+        padding: 0% 0% 4% 0%;
+        height: 500px;
+        flex-basis: 45%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        img {
+            height: 50%;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .miniWrapper {
+            width: 90%;
+            h4 {
+                margin-top: 10px;
+                color: $darkGreen;
+            }
+            button {
+                width:150px;
+                border: none;
+                padding:10px;
+                background-color: $dustyRose;
+            }
+        }
+    }
+}

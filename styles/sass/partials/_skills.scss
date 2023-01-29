@@ -1,0 +1,29 @@
+@use "./variables" as *;
+
+.skills {
+    background-color: $darkGreen;
+    text-align: center;
+    padding: 5% 0%;
+    color:$white;
+    .wrapper {
+        width:60%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
+    .skillsFlex {
+        display:flex;
+        height:auto;
+        width:60%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        i {
+            margin:10px 40px;
+        }
+    }
+}

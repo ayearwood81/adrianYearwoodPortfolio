@@ -1,0 +1,42 @@
+@use "./variables" as *;
+
+.wrapper {
+    width:60%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+header {
+    background-image: url("../assets/rainforest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height:500px;
+    padding-top: 1%;
+    color: white;
+}
+
+nav ul {
+    display:flex;
+    justify-content: space-around;
+    a {
+        color:white;
+    }
+}
+
+.mainBanner {
+    height: 476px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        margin: 15px;
+    }
+    button {
+        width:150px;
+        border: none;
+        padding:10px;
+        background-color: $dustyRose;
+    }
+}
