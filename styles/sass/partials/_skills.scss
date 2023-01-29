@@ -6,7 +6,7 @@
     padding: 5% 0%;
     color:$white;
     .wrapper {
-        width:60%;
+        width:80%;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -18,11 +18,12 @@
     .skillsFlex {
         display:flex;
         height:auto;
-        width:60%;
+        width:80%;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        i {
+        i,
+        svg {
             margin:10px 40px;
         }
     }

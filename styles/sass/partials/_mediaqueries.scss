@@ -1,0 +1,66 @@
+@use "./variables" as *;
+
+@media (max-width: 1255px) {
+    .projects {
+        .project {
+            text-align: center;
+        }
+        .buttonFlex {
+            flex-direction: column;
+            button {
+                margin: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 910px) {
+    .projectGallery {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 495px) {
+    .skillsFlex {
+        flex-direction: column;
+    }
+    .topLinks {
+        display:none;
+    }
+    .dropMenu {
+        // placing the dropmenu hamburger icon
+        position:absolute;
+        display: inline-block;
+        right:20px;
+        top:10px;
+        min-width:100px;
+        text-align: center;
+        button {
+            background: none;
+            border: none;
+            &:hover, &:focus {
+                transform: scale(0.95);
+            }
+        }
+        .dropMenuLinks {
+            /* formatting and hiding the drop menu links */
+            display:none;
+            position: relative;
+            text-align:center;
+            z-index: 1;
+            a {
+                color: $white;
+                text-decoration: none;
+                text-transform: capitalize;
+                display: block;
+            }
+        }
+    }    
+    // .dropMenu:hover,
+    // .dropMenu:focus {
+    //     .dropMenuLinks {
+    //     /* displays the drop menu on a hover */
+    //     display:block;
+    //     } 
+    // }
+}

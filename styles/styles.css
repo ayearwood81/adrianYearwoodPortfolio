@@ -25,6 +25,10 @@ nav ul a {
   color: white;
 }
 
+.dropMenu {
+  display: none;
+}
+
 .mainBanner {
   height: 476px;
   display: -webkit-box;
@@ -49,6 +53,10 @@ nav ul a {
   border: none;
   padding: 10px;
   background-color: #DB9999;
+}
+.mainBanner button:hover, .mainBanner button:focus {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 html {
@@ -338,12 +346,11 @@ p {
 }
 
 .about {
-  height: 400px;
+  margin: 5% 0%;
 }
 .about .wrapper {
   width: 60%;
   max-width: 1200px;
-  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,7 +381,7 @@ p {
   color: #FFFFFF;
 }
 .skills .wrapper {
-  width: 60%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +404,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   height: auto;
-  width: 60%;
+  width: 80%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -407,7 +414,8 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.skills .skillsFlex i {
+.skills .skillsFlex i,
+.skills .skillsFlex svg {
   margin: 10px 40px;
 }
 
@@ -472,6 +480,10 @@ p {
   padding: 10px;
   background-color: #DB9999;
 }
+.projectGallery .project .miniWrapper button:hover, .projectGallery .project .miniWrapper button:focus {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
 
 .contact {
   background-color: #B6CAA2;
@@ -503,6 +515,10 @@ p {
   padding: 10px;
   background-color: #DB9999;
 }
+.contact .wrapper button:hover, .contact .wrapper button:focus {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
 
 footer {
   background-color: #365C46;
@@ -513,4 +529,67 @@ footer {
 footer p {
   margin: 0;
   font-weight: 400;
+}
+
+@media (max-width: 1255px) {
+  .projects .project {
+    text-align: center;
+  }
+  .projects .buttonFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .buttonFlex button {
+    margin: 5px;
+  }
+}
+@media (max-width: 910px) {
+  .projectGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 495px) {
+  .skillsFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topLinks {
+    display: none;
+  }
+  .dropMenu {
+    position: absolute;
+    display: inline-block;
+    right: 20px;
+    top: 10px;
+    min-width: 100px;
+    text-align: center;
+  }
+  .dropMenu button {
+    background: none;
+    border: none;
+  }
+  .dropMenu button:hover, .dropMenu button:focus {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  .dropMenu .dropMenuLinks {
+    /* formatting and hiding the drop menu links */
+    display: none;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+  .dropMenu .dropMenuLinks a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+  }
 }

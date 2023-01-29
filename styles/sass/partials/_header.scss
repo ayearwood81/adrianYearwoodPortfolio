@@ -24,6 +24,10 @@ nav ul {
     }
 }
 
+.dropMenu {
+    display:none;
+}
+
 .mainBanner {
     height: 476px;
     display:flex;
@@ -38,5 +42,8 @@ nav ul {
         border: none;
         padding:10px;
         background-color: $dustyRose;
+        &:hover, &:focus {
+            transform: scale(0.95);
+        }
     }
 }
