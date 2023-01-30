@@ -60,10 +60,7 @@ portfolio.emailForm.addEventListener("submit", function(event){
 
     // only add the comment if they've added a comment with a name
     if ((emailBody) && (name) && (email)) {
-        
-        // handle email submission through Netlify
-
-        // reset the fields if a submission was successful
+        // reset the fields
         document.querySelector("input[name=name]").value = "";
         document.querySelector("input[name=email]").value = "";
         document.querySelector("input[name=subject]").value = "";
