@@ -51,26 +51,26 @@ portfolio.emailButton.addEventListener("click", () => {
 })
 
 
-portfolio.emailForm.addEventListener("submit", function(event){
-    event.preventDefault();
-    const name = document.querySelector("input[name=name]").value;
-    const email = document.querySelector("input[name=email]").value;
-    const subject = document.querySelector("input[name=subject]").value;
-    const emailBody = document.querySelector("textarea[name=emailBody]").value;
+// portfolio.emailForm.addEventListener("submit", function(event){
+//     event.preventDefault();
+//     const name = document.querySelector("input[name=name]").value;
+//     const email = document.querySelector("input[name=email]").value;
+//     const subject = document.querySelector("input[name=subject]").value;
+//     const emailBody = document.querySelector("textarea[name=emailBody]").value;
 
-    // only add the comment if they've added a comment with a name
-    if ((emailBody) && (name) && (email)) {
-        // reset the fields
-        document.querySelector("input[name=name]").value = "";
-        document.querySelector("input[name=email]").value = "";
-        document.querySelector("input[name=subject]").value = "";
-        document.querySelector("textarea[name=emailBody]").value = "";
-    // if the name, email, or email body is missing, prompt the user to fix the problem
-    } else if (emailBody == false) {
-        alert("Missing Email Body!");
-    } else if (name == false) {
-        alert("Missing Name!");
-    } else if (email == false) {
-        alert("Missing Email!");
-    }
-})
+//     // only add the comment if they've added a comment with a name
+//     if ((emailBody) && (name) && (email)) {
+//         // reset the fields
+//         document.querySelector("input[name=name]").value = "";
+//         document.querySelector("input[name=email]").value = "";
+//         document.querySelector("input[name=subject]").value = "";
+//         document.querySelector("textarea[name=emailBody]").value = "";
+//     // if the name, email, or email body is missing, prompt the user to fix the problem
+//     } else if (emailBody == false) {
+//         alert("Missing Email Body!");
+//     } else if (name == false) {
+//         alert("Missing Name!");
+//     } else if (email == false) {
+//         alert("Missing Email!");
+//     }
+// })

@@ -9,7 +9,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  height: 500px;
+  height: 100vh;
   padding-top: 1%;
   color: white;
 }
@@ -30,7 +30,7 @@ nav ul a {
 }
 
 .mainBanner {
-  height: 476px;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +46,7 @@ nav ul a {
           align-items: center;
 }
 .mainBanner h3 {
-  margin: 15px;
+  margin: 3%;
 }
 .mainBanner button {
   width: 150px;
@@ -285,6 +285,7 @@ html {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 body,
