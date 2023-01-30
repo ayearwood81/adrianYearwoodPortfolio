@@ -38,9 +38,6 @@
         button {
             background: none;
             border: none;
-            &:hover, &:focus {
-                transform: scale(0.95);
-            }
         }
         .dropMenuLinks {
             /* formatting and hiding the drop menu links */

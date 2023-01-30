@@ -22,7 +22,7 @@
             </nav>
             <!-- hidden dropdown menu -->
             <div class="dropMenu">
-                <button>
+                <button class="menuButton">
                     <img src="./assets/white-hamburger-icon.svg" alt="">
                 </button>
                 <div class="dropMenuLinks">
@@ -35,7 +35,12 @@
             <div class="mainBanner">
                 <h1>Adrian Yearwood</h1>
                 <h3>Toronto-Based Web Developer</h3>
-                <button>Get in Touch</button>
+                <!-- <button class="inTouch">
+                    <a href="#contact">Get in Touch</a>
+                </button> -->
+                <a href="#contact">
+                    <button class="inTouch">Get in Touch</button>
+                </a>
             </div>
         </div>
     </header>
@@ -43,7 +48,7 @@
         <div class="wrapper">
             <img src="./assets/fartus.png" alt="Adrian Yearwood Headshot">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aliquid atque inventore nemo repellendus quia veritatis numquam corporis suscipit reiciendis. Ducimus iusto provident ab fugit non culpa magnam, voluptatum quas?</p>
+            <p>A theatre artist, athlete, and former educator looking to bring his diverse background and passion for learning to the field of Web Development!</p>
         </div>
     </section>
     <section class="skills">
@@ -89,50 +94,66 @@
             <h2>Projects</h2>
             <ul class="projectGallery">
                 <li class ="project">
-                    <img src="./assets/adrian.jpg" alt="">
+                    <img src="./assets/projectOne.jpeg" alt="">
                     <div class="miniWrapper">
                         <h5>Project One</h5>
                         <h4>HTML, CSS</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa similique vitae sunt, ullam voluptates minus. Quis quasi similique architecto ipsa?</p>
+                        <p>A fully responsive, multi-page website based on a provided design and style guide.</p>
                         <div class="buttonFlex">
-                            <button>View Live</button>
-                            <button>View Code</button>
+                            <a href="https://adrianyearwoodcreative.netlify.app">
+                                <button>View Live</button>
+                            </a>
+                            <a href="https://github.com/ayearwood81/adrianYearwoodProjectOne">
+                                <button>View Code</button>
+                            </a>
                         </div>
                     </div>
                 </li>
                 <li class ="project">
-                    <img src="./assets/anchorman.jpg" alt="">
+                    <img src="./assets/projectTwo.jpg" alt="">
                     <div class="miniWrapper">
                         <h5>Project Two</h5>
                         <h4>HTML, CSS, JAVASCRIPT</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa similique vitae sunt, ullam voluptates minus. Quis quasi similique architecto ipsa?</p>
+                        <p>A web app that allows users to cycle through random movies pulled from the Movie Database API and create a to-watch list through a dating-app-like interface.</p>
                         <div class="buttonFlex">
-                            <button>View Live</button>
-                            <button>View Code</button>
+                            <a href="https://hoidrian-movie-list-maker.netlify.app/">
+                                <button>View Live</button>
+                            </a>
+                            <a href="https://github.com/hoidrian/movie-list-maker-update">
+                                <button>View Code</button>
+                            </a>
                         </div>
                     </div>
                 </li>
                 <li class ="project">
-                    <img src="./assets/bill.jpg" alt="">
+                    <img src="./assets/projectThree.jpg" alt="">
                     <div class="miniWrapper">
                         <h5>Project Three</h5>
                         <h4>HTML, CSS, JAVASCRIPT, REACT, FIREBASE</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa similique vitae sunt, ullam voluptates minus. Quis quasi similique architecto ipsa?</p>
                         <div class="buttonFlex">
-                            <button>View Live</button>
-                            <button>View Code</button>
+                            <a href="#">
+                                <button>View Live</button>
+                            </a>
+                            <a href="#">
+                                <button>View Code</button>
+                            </a>
                         </div>
                     </div>
                 </li>
                 <li class = "project">
-                    <img src="./assets/rena.jpg" alt="">
+                    <img src="./assets/projectFour.jpg" alt="">
                     <div class="miniWrapper">
                         <h5>Project Four</h5>
                         <h4>HTML, CSS, CSS, JAVASCRIPT, REACT</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa similique vitae sunt, ullam voluptates minus. Quis quasi similique architecto ipsa?</p>
                         <div class="buttonFlex">
-                            <button>View Live</button>
-                            <button>View Code</button>
+                            <a href="#">
+                                <button>View Live</button>
+                            </a>
+                            <a href="#">
+                                <button>View Code</button>
+                            </a>
                         </div>
                     </div>
                 </li class ="project">
@@ -144,25 +165,37 @@
             <h2>Contact</h2>
             <!-- icons -->
             <div class="icons">
-                <a href="https://www.linkedin.com" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
+                <a href="www.linkedin.com/in/ayearwood81" target="_blank">
+                    <i class="fa-brands fa-linkedin socialLink"></i>
                 </a>
-                <a href="https://www.github.com" target="_blank">
-                    <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/ayearwood81/" target="_blank">
+                    <i class="fa-brands fa-github socialLink"></i>
                 </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <i class="fa-brands fa-twitter"></i>
+                <a href="https://www.twitter.com/ayearwood81" target="_blank">
+                    <i class="fa-brands fa-twitter socialLink"></i>
                 </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram" target="_blank"></i>
+                <a href="https://www.instagram.com/ayearwood81" target="_blank">
+                    <i class="fa-brands fa-instagram socialLink" target="_blank"></i>
                 </a>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima quo rem optio esse. Ullam.</p>
-            <button class="email">Email Adrian</button>
+            <p>Interested to hear more?  Drop me a line!  All inquiries will be responded to within 24 hours of submission.  Thank you!</p>
+            <button class="showEmailForm">Email Adrian</button>
+            <form action="#" class="emailForm" name="emailForm">
+                <label for="name">Name</label>
+                <input name="name" id="name" type="text" placeholder="Name">
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="Email">
+                <label for="name">Name</label>
+                <input name="subject" id="subject" type="text" placeholder="Subject (Optional)">
+                <label for="emailBody">email here</label>
+                <textarea name="emailBody" id="emailBody" rows="10"></textarea>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </section>
     <footer>
         <p>Built in 2022 by Adrian Yearwood</p>
     </footer>
+    <script src="./app.js"></script>
 </body>
 </html>

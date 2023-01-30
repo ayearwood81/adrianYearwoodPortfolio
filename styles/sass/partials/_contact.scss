@@ -18,8 +18,35 @@
             border: none;
             padding:10px;
             background-color: $dustyRose;
-            &:hover, &:focus {
-                transform: scale(0.95);
+        }
+        .emailForm {
+            display:none;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 5%;
+            label[for="name"], 
+            label[for="email"],
+            label[for="subject"],
+            label[for="emailBody"] {
+                display:none;
+            }
+            input[type="text"],
+            input[type="email"] {
+                width:30%;
+                padding-bottom: 10px;
+                border:none;
+                border-bottom: 1px solid $black;
+            }
+            input[type="email"] {
+                border-bottom: 1px solid $black;
+            }
+            textarea {
+                width:100%;
+                padding-bottom: 10px;
+                margin-bottom: 5%;
+                resize: none;
+                border:none;
+                border-bottom: 1px solid $black;
             }
         }
     }
