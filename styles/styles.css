@@ -367,8 +367,8 @@ input {
           align-items: center;
 }
 .about .wrapper img {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: auto;
   border-radius: 50%;
 }
 .about .wrapper p {
@@ -613,6 +613,9 @@ footer p {
     text-decoration: none;
     text-transform: capitalize;
     display: block;
+  }
+  .about h2 {
+    font-size: 2rem;
   }
   .projects .wrapper {
     width: 90%;
